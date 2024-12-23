@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Branding & Consultancy</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            color: #F5F5F5;
+            background-color: #000;
+            line-height: 1.8;
+            scroll-behavior: smooth;
+        }
+        header {
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            background-color: rgba(0, 0, 0, 0.8);
+            z-index: 1000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 5%;
+        }
+        header .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #E63946;
+        }
+        nav {
+            display: flex;
+        }
+        nav a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #F5F5F5;
+            font-size: 14px;
+        }
+        nav a:hover {
+            color: #E63946;
+        }
+        .hero {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background: url('fashion-artistic-background.jpg') center/cover no-repeat;
+            color: #F5F5F5;
+            height: 100vh;
+            padding: 0 5%;
+            background-attachment: fixed;
+        }
+        .hero h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+        .hero p {
+            font-size: 18px;
+            margin-bottom: 40px;
+        }
+        .hero .cta {
+            padding: 10px 25px;
+            font-size: 16px;
+            background-color: #E63946;
+            color: #fff;
+            border: none;
+            border-radius: 30px;
+            cursor: pointer;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+        .cta:hover {
+            background-color: #D90429;
+        }
+        .section {
+            padding: 50px 5%;
+            text-align: center;
+        }
+        .section h2 {
+            font-size: 28px;
+            margin-bottom: 20px;
+            color: #E63946;
+        }
+        .services {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+        .services .card {
+            width: 100%;
+            max-width: 300px;
+            background-color: #1D1D1D;
+            padding: 20px;
+            border: 1px solid #333;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+            transition: transform 0.3s ease;
+        }
+        .services .card:hover {
+            transform: translateY(-10px);
+        }
+        .services .card h3 {
+            font-size: 20px;
+            margin-bottom: 15px;
+            color: #E63946;
+        }
+        .portfolio {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 20px;
+        }
+        .portfolio img {
+            width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+            transition: transform 0.3s ease;
+        }
+        .portfolio img:hover {
+            transform: scale(1.05);
+        }
+        .contact-form {
+            max-width: 100%;
+            width: 400px;
+            margin: 0 auto;
+            background-color: #1D1D1D;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+        }
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #333;
+            border-radius: 5px;
+            background-color: #000;
+            color: #F5F5F5;
+        }
+        .contact-form button {
+            padding: 10px;
+            font-size: 14px;
+            background-color: #E63946;
+            color: #fff;
+            border: none;
+            border-radius: 30px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .contact-form button:hover {
+            background-color: #D90429;
+        }
+        footer {
+            padding: 10px 5%;
+            background-color: #1D1D1D;
+            color: #F5F5F5;
+            text-align: center;
+        }
+        footer a {
+            color: #E63946;
+            text-decoration: none;
+        }
+
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            nav {
+                flex-wrap: wrap;
+                justify-content: center;
+                width: 100%;
+                margin-top: 10px;
+            }
+            nav a {
+                margin: 5px 10px;
+                font-size: 14px;
+            }
+            .hero h1 {
+                font-size: 28px;
+            }
+            .hero p {
+                font-size: 16px;
+            }
+            .services .card {
+                width: 90%;
+            }
+            .portfolio {
+                grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero h1 {
+                font-size: 20px;
+            }
+            .hero p {
+                font-size: 14px;
+            }
+            .hero .cta {
+                padding: 8px 20px;
+                font-size: 14px;
+            }
+            .contact-form {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">BrandConsult</div>
+        <nav>
+            <a href="#services">Services</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#about">About Us</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+    <div class="hero">
+        <h1>Elevate Your Brand. Expand Your Reach.</h1>
+        <p>Specialists in trademark branding and business consultancy for premium markets worldwide.</p>
+        <a href="#services" class="cta">Discover Our Services</a>
+    </div>
+    <section id="services" class="section services">
+        <h2>Our Services</h2>
+        <div class="card">
+            <h3>Trademark Branding</h3>
+            <p>Creating unique identities for high-end products.</p>
+        </div>
+        <div class="card">
+            <h3>Market Expansion</h3>
+            <p>Connecting your brand with untapped markets.</p>
+        </div>
+        <div class="card">
+            <h3>Business Consultancy</h3>
+            <p>Strategic advice for global success.</p>
+        </div>
+    </section>
+    <section id="portfolio" class="section portfolio">
+        <h2>Our Portfolio</h2>
+        <img src="logo1.jpg" alt="Pierre Cardin">
+        <img src="logo2.jpg" alt="Cacharel">
+        <img src="logo3.jpg" alt="Santa Fe Polo">
+    </section>
+    <section id="contact" class="section contact">
+        <h2>Contact Us</h2>
+        <form class="contact-form">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" rows="5" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+    <footer>
+        <p>&copy; 2024 BrandConsult. All rights reserved. <a href="#">Privacy Policy</a></p>
+    </footer>
+</body>
+</html>
